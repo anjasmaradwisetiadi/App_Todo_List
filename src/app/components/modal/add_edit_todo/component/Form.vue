@@ -65,8 +65,7 @@
     import { defineComponent} from 'vue'
     import { container } from 'node_modules/tsyringe/dist/typings';
 
-
-    // const { v4: uuidv4 } = require('uuid');
+    const { v4: uuidv4 } = require('uuid');
     // import { v4 as uuidv4 } from 'uuid';
 
 
@@ -133,7 +132,9 @@
 
             saveData() {
                 // id maker with timeStamp
-                let timestamp = new Date().getUTCMilliseconds();
+                // let timestamp = new Date().getUTCMilliseconds();
+                let timestamp = uuidv4();
+                console.log(timestamp)
                 let noId = timestamp.toString();
 
 

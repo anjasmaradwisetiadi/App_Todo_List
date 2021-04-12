@@ -27,9 +27,6 @@
                             delete
                         </span>
                     </div>
-                    <div class="mr-4">
-                        {{item.id}}
-                    </div>
                 </div>
             </div>
             <div class="text-left">
